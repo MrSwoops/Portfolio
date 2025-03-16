@@ -53,8 +53,3 @@ function renderProjectGroups()
         container.innerHTML += createProjectRow(row);
     });
 }
-
-window.onload = function () 
-{
-    renderProjectGroups();
-};
