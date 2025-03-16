@@ -2,11 +2,11 @@
  const artDisplays = [
     [
         { project: "Truth and Reconciliation", repo: "https://www.artstation.com/artwork/04Pq0K", 
-        image: "/Images/truthandrec/TruthAndRec.JPG",
+        image: "./Images/truthandrec/TruthAndRec.JPG",
         role: "Modle/Texturing" },
 
         { project: "The Pursuer", repo: "https://www.artstation.com/artwork/xDg6GO", 
-        image: "/Images/pursuer/Front_U.JPG",
+        image: "./Images/pursuer/Front_U.JPG",
         role: "Texturing" }
     ],
     [
