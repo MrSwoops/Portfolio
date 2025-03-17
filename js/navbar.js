@@ -4,14 +4,11 @@
     { bar: "Home", repo: "./index.html", 
     dropdown: [{name: "About", link: "./index.html#about"}, {name: "Skills", link: "./index.html#skills"}, {name: "Featured", link: "./index.html#featured"}]},
 
-    { bar: "Projects", repo: "./projects.html", 
-        dropdown: [{name: "ptext1", link: "./projects.html"}, {name: "ptext2", link: "./projects.html"}]},
+    { bar: "Games", repo: "./projects.html", 
+        dropdown: [{name: "Psychomanteum", link: "./html/Games/psychomanteum.html"}, {name: "Klein", link: "./html/Games/klein.html"}]},
 
     { bar: "Art", repo: "./art.html", 
-    dropdown: [{name: "atext1", link: "./art.html"}, {name: "atext2", link: "./art.html"}]},
-
-    { bar: "Home", repo: "./index.html", 
-    dropdown: [{name: "text1", link: "./index.html"}, {name: "text2", link: "./index.html"}]}
+    dropdown: [{name: "Truth and Reconciliation", link: "./html/Art/truthandrec.html"}, {name: "The Pursuer", link: "./html/Art/pursuer.html"}]}
     
 ];
 

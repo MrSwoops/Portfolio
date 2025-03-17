@@ -13,9 +13,12 @@
     .w3-row-padding img {margin-bottom: 12px}
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    body {
+      background-color: rgb(18, 18, 18);
+    }
     </style>
   </head>
-<body class="w3-black">
+<body>
 
 <!-- Navbar -->
 <div id="navbar"></div>
@@ -23,12 +26,18 @@
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
     <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <header class="w3-container w3-padding-32 w3-center" id="home">
     
     </header>
 
-<div id="project-groups"></div>
+<!-- Featured Section -->
+<div class=" w3-content" id="featured">
+  <h2 class="w3-text-light-grey"></h2>
+  <hr style="width:200px" class="w3-opacity">
 
+  <div id="project-groups"></div>
+
+</div>
 
 
 
