@@ -5,10 +5,10 @@
     dropdown: [{name: "About", link: "./index.html#about"}, {name: "Skills", link: "./index.html#skills"}, {name: "Featured", link: "./index.html#featured"}]},
 
     { bar: "Games", repo: "./projects.html", 
-        dropdown: [{name: "Psychomanteum", link: "./html/Games/psychomanteum.html"}, {name: "Klein", link: "./html/Games/klein.html"}]},
+        dropdown: [{name: "Asphodel Files", link: "./psychomanteum.html"}, {name: "Klein", link: "./klein.html"}]},
 
-    { bar: "Art", repo: "./art.html", 
-    dropdown: [{name: "Truth and Reconciliation", link: "./html/Art/truthandrec.html"}, {name: "The Pursuer", link: "./html/Art/pursuer.html"}]}
+    { bar: "GArt", repo: "./art.html", 
+    dropdown: [{name: "Truth and Reconciliation", link: "./truthandrec.html"}, {name: "The Pursuer", link: "./pursuer.html"}]}
     
 ];
 

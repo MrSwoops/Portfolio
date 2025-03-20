@@ -10,9 +10,9 @@ const projectGroups = [
         role: "Programmer/3D Art", team: "DoughyWorks" }
     ],
     [
-        { project: "Moving Day", repo: "https://www.google.com/", 
-        image: "",
-        role: "Programmer/Designer/Artist", team: "Solo Project" },
+        { project: "Truth and Reconciliation", repo: "https://www.google.com/", 
+        image: "./Images/truthandrec/TruthandRec.JPG",
+        role: "Modeling/Texturing", team: "Halo" },
 
         { project: "Meltdown", repo: "https://www.google.com/", 
         image: "",
