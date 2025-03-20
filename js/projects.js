@@ -1,6 +1,6 @@
 const projectGroups = [
     [
-        { project: "Psychomanteum", repo: "./psychomanteum.html", 
+        { project: "Asphodel Files", repo: "./psychomanteum.html", 
         image: "./Images/psychomanteum/Bar.JPG",
         role: "Lead Programmer/Level Design", team: "Team Psychomanteum" },
 
