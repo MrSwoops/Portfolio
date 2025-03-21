@@ -3,20 +3,16 @@
     [
         { project: "Truth and Reconciliation", repo: "https://www.artstation.com/artwork/04Pq0K", 
         image: "./Images/truthandrec/TruthAndRec.JPG",
-        role: "Modle/Texturing", team: "" },
+        role: "Modeling/Texturing", team: "" },
 
         { project: "The Pursuer", repo: "https://www.artstation.com/artwork/xDg6GO", 
         image: "./Images/pursuer/Front_U.JPG",
         role: "Texturing", team: "" }
     ],
     [
-        { project: "Moving Day", repo: "https://www.google.com/", 
-        image: "",
-        role: "Programmer/Designer/Artist", team: "" },
-
-        { project: "Meltdown", repo: "https://www.google.com/", 
-        image: "",
-        role: "Programmer/Designer", team: "" }
+        { project: "The Pursuer", repo: "https://www.artstation.com/artwork/xDg6GO", 
+            image: "./Images/pursuer/Front_U.JPG",
+            role: "Texturing", team: "" },
     ]
 ];
 
