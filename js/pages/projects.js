@@ -4,9 +4,13 @@ const projectGroups = [
         image: "",
         role: "Programmer/3D Art", team: "DoughyWorks" },
 
+        { project: "AI in Games", repo: "./ai-study.html", 
+        image: "./Images/tanks/AStar.gif",
+        role: "Programming/Design", team: "Study" },
+
         { project: "Bullet Hell", repo: "", 
         image: "",
-        role: "Programming/Design", team: "Case Study" },
+        role: "Programming/Design", team: "Solo Project" },
 
         { project: "Asphodel Files", repo: "./psychomanteum.html", 
         image: "./Images/psychomanteum/Bar.JPG",
@@ -15,7 +19,7 @@ const projectGroups = [
     [
         { project: "Souls-Likes", repo: "./souls-like-study.html", 
         image: "",
-        role: "Programming/Design", team: "Case Study" },
+        role: "Programming/Design", team: "Study" },
 
         { project: "Meltdown", repo: "https://www.google.com/", 
         image: "",
