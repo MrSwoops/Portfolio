@@ -11,7 +11,7 @@ const projectGroups = [
     ],
     [
         { project: "Truth and Reconciliation", repo: "https://www.artstation.com/artwork/04Pq0K", 
-        image: "./Images/truthandrec/TruthandRec.JPG",
+        image: "./Images/truthandrec/TruthAndRec.JPG",
         role: "Modeling/Texturing", team: "Halo" },
 
         { project: "Meltdown", repo: "https://www.google.com/", 
