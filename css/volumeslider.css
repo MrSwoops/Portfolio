@@ -1,4 +1,5 @@
 .video-container {
+  max-width: 800px;
     position: relative; /* Makes sure child elements position relative to this */
     display: inline-block; /* Ensures it only wraps the video */
     }
