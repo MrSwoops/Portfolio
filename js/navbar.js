@@ -19,7 +19,7 @@ function createNavbar(navbar) {
     `;
     navbar.forEach(barItem => {
         html += `
-        <div class="dropdown w3-button w3-bar-item" style="width:${100/navbar.length}%  ">
+        <div class="dropdown w3-button w3-bar-item" style="cursor: pointer; width:${100/navbar.length}% " onclick="window.location.href='${barItem.repo}'">
             <a href=${barItem.repo} class="dropbtn" style="display: block;">${barItem.bar}
                 <i class="fa fa-caret-down"></i>
             </a>

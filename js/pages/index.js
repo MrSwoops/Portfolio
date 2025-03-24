@@ -1,28 +1,37 @@
 
 const projectGroups = [
     [
-        { project: "Asphodel Files", repo: "./psychomanteum.html", 
-        image: "./Images/psychomanteum/Bar.JPG",
-        role: "Lead Programmer/Level Design", team: "Team Psychomanteum" },
+        { project: "Tanks", repo: "./ai-study.html", 
+        image: "./Images/tanks/Tanks.JPG",
+        role: "AI Study", team: "Solo Project" },
 
-        { project: "Kleine", repo: "./klein.html", 
-        image: "",
-        role: "Programmer/3D Art", team: "DoughyWorks" }
+        { project: "The Pursuer", repo: "https://www.artstation.com/artwork/xDg6GO", 
+        image: "./Images/pursuer/Front_U.JPG",
+        role: "Texturing", team: "Dark Souls II" },
+
+        //{ project: "Meltdown", repo: "https://www.google.com/", 
+        //image: "",
+        //role: "Programmer/Designer", team: "Solo Project" },
+        
     ],
     [
         { project: "Truth and Reconciliation", repo: "https://www.artstation.com/artwork/04Pq0K", 
         image: "./Images/truthandrec/TruthAndRec.JPG",
         role: "Modeling/Texturing", team: "Halo" },
 
-        { project: "Meltdown", repo: "https://www.google.com/", 
-        image: "",
-        role: "Programmer/Designer", team: "Solo Project" }
+        { project: "Kleine", repo: "./klein.html", 
+        image: "./Images/kleine/",
+        role: "Programmer/3D Art", team: "DoughyWorks" },
+
+        { project: "Asphodel Files", repo: "./psychomanteum.html", 
+        image: "./Images/psychomanteum/Bar.JPG",
+        role: "Lead Programmer/Level Design", team: "Team Psychomanteum" },
+        
     ]
 ];
 
 const images = [
     {src: "./Images/YoungMan.jpeg", alt: "Young Ryan"},
-    {src: "./Images/IMG_8037.jpeg", alt: "Applying to Clark"},
     {src: "./Images/DoughyWorks.jpeg", alt: "DoughyWorks Team"}
   
 ];
