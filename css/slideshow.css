@@ -1,22 +1,14 @@
 * {box-sizing:border-box}
 /* Slideshow container */
 .slideshow-container {
-    height: 400px;
-    width: 500px;
+    max-width: 800px;
     position: relative;
     margin: auto;
-}
-
-.slideshow-container img{
-    height: 400px; /* Make the image fill the container's height */
-    width: auto; /* Maintain the aspect ratio */
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
-    max-width: inherit;
-    max-height: inherit;
 }
 /* Next & previous buttons */
 .prev, .next {

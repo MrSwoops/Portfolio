@@ -79,7 +79,7 @@ function renderSlideShow()
 const sections = [
     {title: "Programming", skills: ["C++", "C#", "Python", "Frontend"]},
     {title: "Engines", skills: ["Unity", "Unreal 5", "Löve", "Godot"]},
-    {title: "Art", skills: ["Autodesk Maya", "Blender", "3D Substance Painter"]}
+    {title: "Art", skills: ["Autodesk Maya", "Blender", "Substance 3D Painter"]}
   
 ];
 
