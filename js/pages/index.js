@@ -20,7 +20,7 @@ const projectGroups = [
         role: "Modeling/Texturing", team: "Halo" },
 
         { project: "Kleine", repo: "./klein.html", 
-        image: "./Images/kleine/",
+        image: "./Images/kleine/Thumb.JPG",
         role: "Programmer/3D Art", team: "DoughyWorks" },
 
         { project: "Asphodel Files", repo: "./psychomanteum.html", 

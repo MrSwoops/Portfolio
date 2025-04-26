@@ -1,7 +1,7 @@
 const projectGroups = [
     [
         { project: "Kleine", repo: "./klein.html", 
-        image: "",
+        image: "./Images/kleine/Thumb.JPG",
         role: "Programmer/3D Art", team: "DoughyWorks" },
 
         { project: "Tanks", repo: "./ai-study.html", 
