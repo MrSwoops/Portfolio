@@ -8,7 +8,10 @@
         dropdown: [{name: "Asphodel Files", link: "./psychomanteum.html"}, {name: "Klein", link: "./klein.html"}]},
 
     { bar: "Art", repo: "./art.html", 
-    dropdown: [{name: "Truth and Reconciliation", link: "./truthandrec.html"}, {name: "The Pursuer", link: "./pursuer.html"}]}
+    dropdown: [{name: "Truth and Reconciliation", link: "./truthandrec.html"}, {name: "The Pursuer", link: "./pursuer.html"}]},
+
+    { bar: "Blog", repo: "./blog.html", 
+    dropdown: [{name: "Recent", link: "./blog.html#"}]}
     
 ];
 
