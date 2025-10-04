@@ -33,6 +33,34 @@
     <h2 class="w3-text-light-grey">Recent Posts</h2>
     <hr style="width:200px" class="w3-opacity">
     
+      <h3 class="w3-text-light-grey" id="10_3">10/3</h3>
+      <hr style="width:50px" class="w3-opacity">
+      <p>
+       While I wasn't able to work on my MFA project this week, I spent a lot of time on another project learning about integrating systems into unreal engine and different kinds of pathfinding then are used in most games.
+       This other project is a large world (or rather universe?) scifi aerospace shooter. As such, common and traditional pathfinding methods such as navmeshes and A* aren't really viable. After experimenting with different systems, I found the best way (for our game) 
+       to implement 3D pathfinding for space ships was to create a heavily modified Rapidly Expanding Random Tree (RRT). The version I created differs from the traditional by building bidirectionally from the start and end points, building with a bias towards a direction and utilizing 
+       node costs to prioritize, shorten and optimize paths. This allows it to remain lightweight wil becoming far more predictable and direct. I then learned about subsystems and blueprint function libraries to seamlessly add this pathfinding system into unreal engine to be used anywhere. All around just some pretty cool stuffs.
+        <br /><br />
+        
+      </p>
+      <div class="w3-center ">
+        <img src="Images/blog/RRT.gif" alt="Post Image" class="w3-image w3-half">
+        <img src="Images/blog/2xBiRRTStar.gif" alt="Post Image" class="w3-image w3-half">
+      </div>
+
+      <h3 class="w3-text-light-grey" id="9_26">9/26</h3>
+      <hr style="width:50px" class="w3-opacity">
+      <p>
+       Lot of learning done this week. Set up and implemented FMOD into the project. Also set up common ui into the project for easier controller integration. 
+       Not a very fun thing to learn and implement but you can't argue with the results. Also learned a bit more about creating custom tasks and 
+       path building with navmeshes to create more controllable movement.
+        <br /><br />
+        
+      </p>
+      <div class="w3-center ">
+        <img src="Images/blog/CommonUI.gif" alt="Post Image" class="w3-image w3-half">
+        <img src="Images/blog/FMOD.gif" alt="Post Image" class="w3-image w3-half">
+      </div>
   
       <h3 class="w3-text-light-grey" id="9_20">9/20</h3>
       <hr style="width:50px" class="w3-opacity">
