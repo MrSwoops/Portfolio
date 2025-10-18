@@ -33,6 +33,20 @@
     <h2 class="w3-text-light-grey">Recent Posts</h2>
     <hr style="width:200px" class="w3-opacity">
 
+      <h3 class="w3-text-light-grey" id="10_18">10/18</h3>
+      <hr style="width:50px" class="w3-opacity">
+      <p>
+       Good progress made with the AI. Now have a fully working simple enemy bot. How its behavior works is it will randomly wander around the map until it is attacked or sees an enemy (you). When it sees an enemy it will get within affective weapon range and attack them. 
+       If the bot is attacked back at it will start moving around and ducking to avoid bullets. If the bot takes too much damage it will try to retreat to cover while firing at the enemy (and will properly update its target hiding spot now). If the bot loses sight of the player, depending on their confidence of the situation will wither charge the players last known location, 
+       throw out a couple of shots at its last known location, or wait for the player to show themself again; Confidence is determined by a couple of factors like current health, ammo, nearby enemies etc with each one being able to be weighted differently for each character to diversify behavior; Also if the bot kills the enemy it might shoot its corpse or tbag it in celebration; I also made a ton of adjustments to the skeleton and rig weight painting so the model no longer looks freaky af with broken arms and legs during some animations;
+        <br /><br />
+        
+      </p>
+      <div class="w3-center w3-row-padding" style="margin:0 -16px">
+        <img src="Images/blog/botbt.PNG" alt="Post Image" class="w3-image w3-half">
+        <img src="Images/blog/fixedskeleton.PNG" alt="Post Image" class="w3-image w3-half">
+      </div>
+
       <h3 class="w3-text-light-grey" id="10_11">10/11</h3>
       <hr style="width:50px" class="w3-opacity">
       <p>
