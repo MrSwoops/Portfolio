@@ -1,18 +1,18 @@
  // Define pricing plans in an array
  const artDisplays = [
     [
+        //{ project: "Lower Irithyll", repo: "https://www.artstation.com/artwork/xDg6GO", 
+        //image: "./Images/LowerIrithyll/gb.PNG",
+        //role: "Environment", team: "" },
+
         { project: "Truth and Reconciliation", repo: "https://www.artstation.com/artwork/04Pq0K", 
         image: "./Images/truthandrec/TruthAndRec.JPG",
         role: "Modeling/Texturing", team: "" },
-
-        { project: "The Pursuer", repo: "https://www.artstation.com/artwork/xDg6GO", 
-        image: "./Images/pursuer/Front_U.JPG",
-        role: "Texturing", team: "" }
     ],
     [
         { project: "The Pursuer", repo: "https://www.artstation.com/artwork/xDg6GO", 
-            image: "./Images/pursuer/Front_U.JPG",
-            role: "Texturing", team: "" },
+        image: "./Images/pursuer/Front_U.JPG",
+        role: "Texturing", team: "" },
     ]
 ];
 

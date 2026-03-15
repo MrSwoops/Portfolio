@@ -1,0 +1,11 @@
+.display-row {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Stack image and text on small screens */
+    @media (max-width: 600px) {
+      .display-row {
+        flex-direction: column;
+      }
+    }

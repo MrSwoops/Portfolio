@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/dropdownbar.css">
     <link rel="stylesheet" href="./css/volumeslider.css">
     <link rel="stylesheet" href="./css/slideshow.css">
+    <link rel="stylesheet" href="./css/projdisplayrow.css">
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
@@ -19,13 +20,10 @@
     body {
       background-color: rgb(18, 18, 18);
     }
-
-    
     </style>
   </head>
 <body>
 
-  
 <!-- Navbar -->
 <div class="w3-top" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
@@ -55,59 +53,159 @@
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
-    <div class="w3-half">
-      <h2 class="w3-text-light-grey">About</h2>
+
+
+    <h2 class="w3-text-light-grey">About</h2>
       <hr style="width:200px" class="w3-opacity">
       <p>
         Klein is a blobby beat-em-up party game inspired by games like Gang Beasts and Human Fall Flat. Two teams 
         duke it out across different locations competing in various gamemodes as the world changes around them. Klein was made in part 
         to study how the theories of group identity, deviance regulation, and descriptive norms stop or alter toxic behaviors while playing games.
       </p>
-      <img src="./Images/kleine/CharSelect.gif" alt="Project Image" class="w3-image">
-    </div>
-    <div class="w3-half">
-      <img src="./Images/kleine/KleinModes.gif" alt="Project Image" class="w3-image">
-      <h2 class="w3-text-light-grey">Assumed Tasks</h2>
+      <p>
+        The core gameplay loop has players start in a lobby customizing there characters. Next they select a game mode and stage, then enter the level. The goal within each level is to earn more points than the enemy team by completing 
+        game mode related objectives and events before time runs out to win.
+      </p>
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">Active Ragdoll Combat</h2>
       <hr style="width:200px" class="w3-opacity">
-      <div id="features" class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul>
-            <li>Active Ragdoll</li>
-            <li>Local Multiplayer</li>
-            <li>Weather System</li>
-            <li>Level/Gamemode Selection</li>
-            <li>Multiple Game Modes</li>
-          </ul>
+      <p>
+          Characters use an active ragdoll system in order to move around and interact with the world. I built the ragdoll system off of an existing unity store asset called Oodles Party and HEAVILY modified it due to things like lack of functionality/modifications and 
+          deprecated/jank code (We used a much older version. From what I understand this pack has been wildly improved since then). Main modifications include better rig control, animation overrides and runtime optimizations.
+      </p>
+      <hr style="width:150px" class="w3-opacity">
+
+      <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16 display-row">
+        <div class="w3-half">
+          <p>
+            Players mainly interact with the world using their arms. Players can swap between which arm they're controlling using Y, toggling between left and right, or hold the button the use dual control. The right stick will aim 
+          the arms in the direction of the stick in relation to the camera to keep things consistent for the player. Using left and right trigger will raise the left and right arms respectively, and left and right bumber will toggle grabbing.
+          </p>
         </div>
-        <div class="w3-half w3-margin-bottom">
-          <ul>
-            <li>UI Programming</li>
-            <li>Character Customization</li>
-            <li>LoDs</li>
-            <li>Destructable Objects</li>
-            <li>Interactable Objects</li>
-          </ul>
+        <div class="w3-half">
+          <img src="./Images/kleine/KleinBasicARagdoll.gif" alt="Basic Ragdoll" class="w3-image">
+        </div>
+      </div>
+      
+      <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16 display-row">
+        <div class="w3-half">
+          <img src="./Images/kleine/KleinBasicCombat.gif" alt="Capture the Flag" class="w3-image">
+        </div>
+        <div class="w3-half">
+          <p>
+            Players can attack using the X button, which will cause their character to swing their active arm. Attacks deal damage based on a base force and a velocity modifier, meaning more impactful swing = fatter hit, encouraging use of limb 
+            control even when attacking. Players can also pick up objects to use as weapons, which have a higher base damage than fists. Characters don't just have health; They have a conciousness level. Taking heavier hits drops the players conciousness level 
+            until they get nocked out and enter a pure ragdoll state until they regenerate.
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">Game Modes</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          All game modes ultimately have the same goal; Get more points than the enemy before time runs out. What changes between modes is the how and why. 
+          Game modes are set up to be very modular. Every level has a base template that can load additional sublevels for layouts (spawn points, props, weapons, etc.) and logic (game mode related shenanigans).
+      </p>
+      <hr style="width:150px" class="w3-opacity">
+
+      <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16 display-row">
+        <div class="w3-half">
+          <p>
+            Point Match is the main game mode of Klein. Points are earned in a very large number of ways. Simply killing enemies allows you to earn points, 
+            and when an enemy is killed they create an area for the enemy team to interact with. Emoting inside will "confirm" the kill, earning points. Additionally, xp blobs constantly spawn around the map, containing xp proportionate to their size.
+          </p>
+        </div>
+        <div class="w3-half">
+          <img src="./Images/kleine/KleinPointMatch.gif" alt="Point Match" class="w3-image">
+        </div>
+      </div>
+      
+      <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16 display-row">
+        <div class="w3-half">
+          <img src="./Images/kleine/KleinCTF.gif" alt="Capture the Flag" class="w3-image">
+        </div>
+        <div class="w3-half">
+          <p>
+            Capture the Flag is the next game mode. This mode is really self explanitory but regardless, this mode has each team defending their flag while trying to steal and bring back the enemy team's flag.
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16 display-row">
+        <div class="w3-half">
+          <p>
+            Golden Goose is a game mode inspired by Halo's Oddball. One golden goose spawns at the start of the match and runs wildly around. Teams must fight each other in order to catch and maintain control of the goose to earn points for their team.
+          </p>
+        </div>
+        <div class="w3-half">
+          <img src="./Images/kleine/KleinGooseMode.gif" alt="Golden Goose" class="w3-image">
+        </div>
+      </div>
+
+      <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16 display-row">
+        <div class="w3-half">
+          <img src="./Images/kleine/KleinPracticeMode.gif" alt="Practice Mode" class="w3-image">
+        </div>
+        <div class="w3-half">
+          <p>
+            Practice Mode is the last "Game Mode". This mode spawns in target dummies and interactable switches that enable players to mess around, test things out and have fun. 
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="w3-content w3-justify w3-text-grey w3-padding-16">
-    <h3 class="w3-text-light-grey">Reflection</h3>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-      text
-    </p>
 
-    <a href="" class="w3-button w3-light-grey w3-padding-large w3-section">
-      GitHub
-    </a>
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">Events</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          Events are additional ways players may earn points for their team that can be toggled on or off for any game mode. Events can trigger randomly, or can be triggered at specified times.
+      </p>
+      <hr style="width:150px" class="w3-opacity">
 
-  </div>
+      <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16 display-row">
+        <div class="w3-half">
+          <p>
+            One Flag - Spawns in one flag and a capture point for both teams. Each team must fight over the flag to capture, earning points for their team. The flag may be captured a specified number of times or just once.
+          </p>
+          <p>
+            HeadHunter - One member of each team is assigned as their teams VIP. Each teams goal is to eliminate the other teams VIP while defending their own. Killing the enemy VIP earns points for your team
+          </p>
+        </div>
+        <div class="w3-half">
+          <img src="./Images/kleine/KleinEvents1.gif" alt="Point Match" class="w3-image">
+        </div>
+      </div>
+      
+      <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16 display-row">
+        <div class="w3-half">
+          <img src="./Images/kleine/KleinEvents2.gif" alt="Capture the Flag" class="w3-image">
+        </div>
+        <div class="w3-half">
+          <p>
+            Goose Event - Spawns a golden goose on the stage that starts randomly running around. The first team to grab the goose earns points for their team.
+          </p>
+          <p>
+            Hot Potato - A random player is given a hot potato. In order to pass it around, the player must hit someone else. The last player with the potato when its timer runs out is killed, and the opposing team earns points.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
   
   <script src="./js/volumeslider.js"></script>
   <script src="./js/pages/psychomanteum.js"></script>
 
-  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+  <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -115,8 +213,6 @@
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
-  <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="" target="_blank">Start now</a> 
   <!-- End footer -->
   </footer>
 

@@ -57,34 +57,63 @@
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
-    <div class="w3-half">
-      <h2 class="w3-text-light-grey">About</h2>
+    <h2 class="w3-text-light-grey">About</h2>
       <hr style="width:200px" class="w3-opacity">
       <p>
-        In order to get a deep understanding of complex AI, FPS systems and multiplayer functionality, I decided to make a project based on a series that stood on top of all of these. At its core, the game is designed after Halo 3.
+        The Bungie era of Halo holds a very special place in my childhood. Halo 3 was the first shooter game my parents ever let me buy, and only because I convinced them that all of the blood would be blue (it wasn't). After that game I had to play them all.
+        In this project I wanted to create a fan project in the Halo universe. I wanted to explore some of the mechanics and challenges that come with making these types of games, like netplay and incredible unique and dynamic AI, as well as work within a universe that means a lot to me.
       </p>
-      <img src="./Images/tanks/AStar.gif" alt="Project Image" class="w3-image">
-    </div>
-    <div class="w3-half">
-      <img src="./Images/tanks/States.gif" alt="Project Image" class="w3-image">
-      <h2 class="w3-text-light-grey">Features</h2>
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">Weapons</h2>
       <hr style="width:200px" class="w3-opacity">
-      <div id="features" class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul>
-            <li>Advanced State Machine</li>
-            <li>Sensory System</li>
-          </ul>
-        </div>
-        <div class="w3-half w3-margin-bottom">
-          <ul>
-            <li>Minimap</li>
-            <li>A* Pathfinding</li>
-          </ul>
-        </div>
+      <p>
+          When it comes to weapons, Halo has a lot of em and a lot of different types. Melee, explosive, energy, full auto, burst, lock on. It goes on and on. I had to make an extremely modular weapon system.
+      </p>
+      <hr style="width:150px" class="w3-opacity">
+      <div class="w3-half">
+        <p>
+          Weapons are made up of a ton of seperate components that use assigned data to determine behavior for each part/function of the gun. An ammo component/data for imformation on ammo handling (energy, kinetic, ammo capacity, etc.), 
+          a fire component/data for information on how the gun should handle firing (charge up, full auto, etc.), projectile data for projectile behavior (penetration, homing, mesh/collider, etc.) and UI data for how to display the weapon. 
+          This allows weapons to be built quickly, easily, in engine and with as much modularity as possible. 
+        </p>
+        <img src="./Images/tanks/AStar.gif" alt="Project Image" class="w3-image">
+      </div>
+      <div class="w3-half">
+        <img src="./Images/tanks/States.gif" alt="Project Image" class="w3-image">
+        <p>
+          Flight agents use Unreal's built in behavior tree system to drive decision making and stimuli response. 
+        </p>
       </div>
     </div>
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">AI</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          AI 
+      </p>
+      <hr style="width:150px" class="w3-opacity">
+      <div class="w3-half">
+        <p>
+          Text
+        </p>
+        <img src="./Images/" alt="Project Image" class="w3-image">
+      </div>
+      <div class="w3-half">
+        <img src="./Images/" alt="Project Image" class="w3-image">
+        <p>
+          Text 
+        </p>
+      </div>
+    </div>
+
+
   </div>
+
+
   <div class="w3-content w3-justify w3-text-grey w3-padding-16">
     <!-- <h3 class="w3-text-light-grey">Reflection</h3> -->
     <hr style="width:200px" class="w3-opacity">

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryan Cooke's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/dropdownbar.css">
+    <link rel="stylesheet" href="./css/volumeslider.css">
+    <link rel="stylesheet" href="./css/slideshow.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    body {
+      background-color: rgb(18, 18, 18);
+    }
+
+#features ul li {
+  white-space: nowrap;
+}
+    </style>
+  </head>
+<body>
+
+  
+<!-- Navbar -->
+<div class="w3-top" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="./projects.html" class="w3-button w3-bar-item" style="width:20%">← All Projects</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center" id="home">
+    <h1 class="w3-jumbo" style="color: white;">Cop Game</h1>
+    <p style="color: white;">Project & Engineering Lead</p>
+
+    <div class="video-container">
+      <video id="vid" width="100%" autoplay loop muted playsinline style="pointer-events: none;">
+          <source src="./Videos/" type="video/mp4">
+
+          Your browser does not support the video tag.
+      </video>
+      <div class="volume-slider">
+        <input type="range" class="volume-control" id="volumeControl" min="0" max="1" step="0.01" value="0">
+      </div>
+    </div>
+  </header>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+    <h2 class="w3-text-light-grey">About</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+        Coop cop sim.
+      </p>
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">World</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          The world uses a dynamic time and weather system to create an immersive world. 
+      </p>
+      <hr style="width:150px" class="w3-opacity">
+      <div class="w3-half">
+        <p>
+          The world time system is highly customizable, allowing for both developer control and player game settings. Time can be set to have a certain number of minutes in a day, and what the ratio of real to in game minutes is. 
+          Anything may subscribe to the world time system to trigger delegates with trigger options like repitition. The skybox material uses a world light to project a sun and moon onto it, and the light updates along with the time
+        </p>
+        <img src="./Images/tanks/AStar.gif" alt="Project Image" class="w3-image">
+      </div>
+      <div class="w3-half">
+        <img src="./Images/tanks/States.gif" alt="Project Image" class="w3-image">
+        <p>
+          The worlds weather system subscribes to the time system to randomly change weather on a repeating, customizable interval. Weather presets are created as data, holding information for precipitation type, intensity, cloud coverage and the like. 
+          When the current weather changes, the world slowly updates as to not break immersion. The game currently supports sunny, cloudy, rainy and snowy weather with a high degree of customizability 
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <div class="w3-content w3-justify w3-text-grey w3-padding-16">
+    <!-- <h3 class="w3-text-light-grey">Reflection</h3> -->
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      
+    </p>
+
+    <!-- <a href="" class="w3-button w3-light-grey w3-padding-large w3-section">GitHub</a> -->
+
+  </div>
+  
+  <script src="./js/volumeslider.js"></script>
+  <script src="./js/pages/psychomanteum.js"></script>
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

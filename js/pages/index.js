@@ -8,24 +8,17 @@ const projectGroups = [
         { project: "The Pursuer", repo: "https://www.artstation.com/artwork/xDg6GO", 
         image: "./Images/pursuer/Front_U.JPG",
         role: "Texturing", team: "Dark Souls II" },
-
-        //{ project: "Meltdown", repo: "https://www.google.com/", 
-        //image: "",
-        //role: "Programmer/Designer", team: "Solo Project" },
         
     ],
     [
+        { project: "Kleine", repo: "./klein.html", 
+        image: "./Images/kleine/KleinThumb.PNG",
+        role: "Programmer/3D Art", team: "DoughyWorks" },
+        
         { project: "Truth and Reconciliation", repo: "https://www.artstation.com/artwork/04Pq0K", 
         image: "./Images/truthandrec/TruthAndRec.JPG",
         role: "Modeling/Texturing", team: "Halo" },
 
-        { project: "Kleine", repo: "./klein.html", 
-        image: "./Images/kleine/Thumb.JPG",
-        role: "Programmer/3D Art", team: "DoughyWorks" },
-
-        { project: "Asphodel Files", repo: "./psychomanteum.html", 
-        image: "./Images/psychomanteum/Bar.JPG",
-        role: "Lead Programmer/Level Design", team: "Team Psychomanteum" },
         
     ]
 ];
@@ -33,7 +26,7 @@ const projectGroups = [
 const images = [
     {src: "./Images/YoungMan.jpeg", alt: "Young Ryan"},
     {src: "./Images/kleine/DoughyWorks.jpeg", alt: "DoughyWorks Team"},
-    {src: "./Images/kleine/KleinPAX.jpeg", alt: "Klein Team at PAX"},
+    {src: "./Images/kleine/KleinPAX.jpeg", alt: "DoughyWorks Team at PAX"},
 ];
 let slideIndex = Math.floor(Math.random() * document.getElementsByClassName("mySlides").length);
 let timeOutID;

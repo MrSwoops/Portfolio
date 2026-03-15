@@ -44,7 +44,7 @@
 
     <div class="video-container">
       <video id="vid" width="100%" autoplay loop muted playsinline style="pointer-events: none;">
-          <source src="./Videos/AI_Demo.mp4" type="video/mp4">
+          <source src="./Videos/fctrailer1.mp4" type="video/mp4">
 
           Your browser does not support the video tag.
       </video>
@@ -57,9 +57,92 @@
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
-    <div class="w3-half">
-      <h2 class="w3-text-light-grey">About</h2>
+    <h2 class="w3-text-light-grey">About</h2>
       <hr style="width:200px" class="w3-opacity">
+      <p>
+        During my senior year at Clark University, the school provided me with the opportunity to run a game studio along with a small team of students. 
+        Together we developed a unique sci-fi adventure that takes the player on a fast paced journey through a vast and dangerous world.
+      </p>
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">AI</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          If it weren't obvious already, traditional pathfinding isn't going to work in this game. Given the full 3 dimentions that need to be fully traversable, using Unreal Engine's built in pathing solutions aren't going to work, and traditional systems like A* 
+          simply wouldn't cut it. Sure, for the most part ship agents could just point and move at an enemy or follow a spline path and have ok results.
+      </p>
+      <p>
+          While we do use these methods at times, there are other times where the environment is too complex, or the movement becomes too rigid to have meaningful and fun interactions. To solve this, flight agents use a combination of spline paths, pathfinding, 
+          point to point movement and reactive manuevers to create engaging combat scenarios.
+      </p>
+      <hr style="width:150px" class="w3-opacity">
+      <div class="w3-half">
+        <p>
+          Firstly the elephant in the room, pathfinding. This was actually a very fun one to solve. In a sentence, I implemented a bi-directional rapidly exploring random tree. Given a starting point (ai agent) and an end point (agent goal), 
+          a bounding box is created around the points. Then the algorithm takes turns exploring random directions and distances from the start and end point, biasing them to head towards each other. If it discovers a shorter way to a point, it will rewire the 
+          exploration node to find the shortest possible path. Once both exploration branches have a point that can see a point on the other with an appropriate amount of space for the agents body to fit, the path is completed and returned as a list of points.
+          This was a very enjoyable excersize. This was the first time, in terms of pathfinding, that I had to fully research and develop an appropriate system.
+        </p>
+        <img src="./Images/tanks/AStar.gif" alt="Project Image" class="w3-image">
+      </div>
+      <div class="w3-half">
+        <img src="./Images/tanks/States.gif" alt="Project Image" class="w3-image">
+        <p>
+          Flight agents use Unreal's built in behavior tree system to drive decision making and stimuli response. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">Environment</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          While being in charge of art direction and management, I also had the opportunity to create some of the visual effects for the environments, such as snow ground accumulation and precipitation vfx.
+      </p>
+      <hr style="width:150px" class="w3-opacity">
+      <div class="w3-half">
+        <p>
+          Snow
+        </p>
+        <img src="./Images/" alt="Project Image" class="w3-image">
+      </div>
+      <div class="w3-half">
+        <img src="./Images/" alt="Project Image" class="w3-image">
+        <p>
+          Flight agents use Unreal's built in behavior tree system to drive decision making and stimuli response. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">Map</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          After some discussion on how we wanted to present the map to the player, we decided to take inspiration from Legend of Zelda: BoTW's divine beast map and have a 3D holographic display that the player can fully explore.
+      </p>
+      <hr style="width:150px" class="w3-opacity">
+      <div class="w3-half">
+        <p>
+          I created the map model by making a simplified, scaled down model of the world in Blender. When a ship spawns in, it also spawns in a model that represents it, assigning it a material based on it's type (player, ally, nuetral, enemy) 
+          on a layer only the map camera can render, and updates its position when its attached ship moves.
+        </p>
+        <img src="./Images/" alt="Project Image" class="w3-image">
+      </div>
+      <div class="w3-half">
+        <img src="./Images/" alt="Project Image" class="w3-image">
+        <p>
+          Flight agents use Unreal's built in behavior tree system to drive decision making and stimuli response. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <h2 class="w3-text-light-grey">UI</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-half">
       <p>
         FleetCom is an aerospace military shooter.
       </p>
@@ -84,6 +167,7 @@
         </div>
       </div>
     </div>
+
   </div>
   <div class="w3-content w3-justify w3-text-grey w3-padding-16">
     <!-- <h3 class="w3-text-light-grey">Reflection</h3> -->
