@@ -25,8 +25,11 @@ const projectGroups = [
 
 const images = [
     {src: "./Images/YoungMan.jpeg", alt: "Young Ryan"},
-    {src: "./Images/kleine/DoughyWorks.jpeg", alt: "DoughyWorks Team"},
     {src: "./Images/kleine/KleinPAX.jpeg", alt: "DoughyWorks Team at PAX"},
+    {src: "./Images/Brother.JPG", alt: "Ryan with his brother"},
+    {src: "./Images/LIR.jpeg", alt: "Ryan gaming with hid dad"},
+    {src: "./Images/kleine/DoughyWorks.jpeg", alt: "DoughyWorks Team"},
+    {src: "./Images/PaxDemo.JPEG", alt: "Demoing at PAX"},
 ];
 let slideIndex = Math.floor(Math.random() * document.getElementsByClassName("mySlides").length);
 let timeOutID;
