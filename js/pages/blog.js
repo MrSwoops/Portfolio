@@ -49,5 +49,6 @@ function renderBlogPosts()
 window.onload = function () 
 {
     renderNavbar();
+    renderFooter();
     //renderBlogPosts() 
 };

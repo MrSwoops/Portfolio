@@ -9,9 +9,9 @@ const projectGroups = [
         role: "Programming/Design", team: "Solo Study" },
     ],
     [
-        //{ project: "FleetCom", repo: "./fleetcom.html", 
-        //image: "./Images/blog/Megastruct.png",
-        //role: "Project & Programming Lead", team: "Team FleetCom" },
+        { project: "FleetCom", repo: "./fleetcom.html", 
+        image: "./Images/FleetCom/FCom.png",
+        role: "Project & Programming Lead", team: "Team FleetCom" },
 
         { project: "Kleine", repo: "./klein.html", 
         image: "./Images/kleine/KleinThumb.PNG",
@@ -22,5 +22,6 @@ const projectGroups = [
 window.onload = function () 
 {
     renderNavbar();
+    renderFooter();
     renderProjectGroups(projectGroups);
 };

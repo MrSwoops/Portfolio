@@ -1,5 +1,4 @@
- // Define pricing plans in an array
- const barItems = [
+const barItems = [
     
     { bar: "Home", repo: "./index.html", 
     dropdown: [{name: "About", link: "./index.html#about"}, {name: "Skills", link: "./index.html#skills"}, {name: "Featured", link: "./index.html#featured"}]},

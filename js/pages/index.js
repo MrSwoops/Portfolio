@@ -112,6 +112,7 @@ function renderSkillGroups()
 window.onload = function () 
 {
     renderNavbar();
+    renderFooter();
     renderSlideShow();
     showSlides(slideIndex);
     renderSkillGroups();
