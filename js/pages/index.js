@@ -5,6 +5,10 @@ const projectGroups = [
         image: "./Images/tanks/Tanks.JPG",
         role: "AI Study", team: "Solo Project" },
 
+        { project: "Fractal Videos", repo: "./computer-graphics.html", 
+        image: "./Images/CompGraphics/Fractals.gif",
+        role: "Graphics Programming", team: "" },
+
         { project: "The Pursuer", repo: "https://www.artstation.com/artwork/xDg6GO", 
         image: "./Images/pursuer/Front_U.JPG",
         role: "Texturing", team: "Dark Souls II" },

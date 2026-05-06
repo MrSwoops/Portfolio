@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryan Cooke's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/dropdownbar.css">
+    <link rel="stylesheet" href="./css/volumeslider.css">
+    <link rel="stylesheet" href="./css/slideshow.css">
+    <link rel="stylesheet" href="./css/projdisplayrow.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    body {
+      background-color: rgb(18, 18, 18);
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="./art.html" class="w3-button w3-bar-item" style="width:20%">← All Projects</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center" id="home">
+    <h1 class="w3-jumbo" style="color: white;"> Computer Graphics </h1>
+    <p style="color: white;"> Rendering</p>
+
+    <div class="video-container">
+      <video id="vid" width="100%" autoplay loop muted playsinline style="pointer-events: none;">
+          <source src="./Videos/RaymarchingAudioVisualizerFractal.mp4" type="video/mp4">
+
+          Your browser does not support the video tag.
+      </video>
+      <div class="volume-slider">
+        <input type="range" class="volume-control" id="volumeControl" min="0" max="1" step="0.01" value="0">
+      </div>
+    </div>
+  </header>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+
+    <!-- Info Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-row-padding w3-padding-16">
+      <h2 class="w3-text-light-grey">Fractal Audio Visualizers</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          Within Unreal Engine, I created custom hlsl scripts to generate fractal environments using SDFs (Signed Distance Function) and render them out using raymarching. The fractal generations have been modified to transform in different ways, 
+          taking inputs from time, audio DSP (Digital Signal Processors) metering and the camera view.
+      </p>
+    </div>
+
+  <div id="footer"></div>
+  
+  <script src="./js/footer.js"></script>
+  <script src="./js/volumeslider.js"></script>
+  <script src="./js/pages/psychomanteum.js"></script>
+
+</div>
+
+</body>
+</html>

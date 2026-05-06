@@ -1,8 +1,12 @@
 const projectGroups = [
     [
-        //{ project: "Project Hola", repo: "./hola.html", 
-        //image: "./Images/blog/HamsterBeef.PNG",
-        //role: "Lead", team: "Solo Study" },
+        { project: "Project Hola", repo: "./hola.html", 
+        image: "./Images/blog/HamsterBeef.PNG",
+        role: "Lead", team: "Solo Study" },
+
+        { project: "Dynamic Open World", repo: "./copgame.html", 
+        image: "./Images/",
+        role: "Research Project", team: "Solo Study" },
 
         { project: "Tanks", repo: "./ai-study.html", 
         image: "./Images/tanks/AStar.gif",

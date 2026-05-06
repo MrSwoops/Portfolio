@@ -79,10 +79,10 @@
       <hr style="width:150px" class="w3-opacity">
       <div class="w3-half">
         <p>
-          Firstly the elephant in the room, pathfinding. This was actually a very fun one to solve. In a sentence, I implemented a bi-directional rapidly exploring random tree. Given a starting point (ai agent) and an end point (agent goal), 
+          Pathfinding was actually a very fun problem to solve. In a sentence, I implemented a bi-directional rapidly exploring random tree. Given a starting point and an end point, 
           a bounding box is created around the points. Then the algorithm takes turns exploring random directions and distances from the start and end point, biasing them to head towards each other. If it discovers a shorter way to a point, it will rewire the 
           exploration node to find the shortest possible path. Once both exploration branches have a point that can see a point on the other with an appropriate amount of space for the agents body to fit, the path is completed and returned as a list of points.
-          This was a very enjoyable excersize. This was the first time, in terms of pathfinding, that I had to fully research and develop an appropriate system.
+          This was the first time, in terms of pathfinding, that I had to fully research and develop an appropriate system.
         </p>
         <img src="./Images/tanks/AStar.gif" alt="Project Image" class="w3-image">
       </div>
